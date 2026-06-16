@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Biology Achievement Tracker</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            text-align: center;
+            color: #800020; /* Burgundy color matching the theme */
+            border-bottom: 3px solid #800020;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .chapter-title {
+            background-color: #800020;
+            color: white;
+            padding: 12px 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f1f1;
+            color: #555;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        .lesson-code {
+            width: 15%;
+            color: #777;
+            font-weight: bold;
+        }
+        .lesson-name {
+            width: 45%;
+        }
+        .checkbox-cell {
+            width: 20%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        /* Style checkboxes */
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: #800020;
+        }
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📋 EN 📋</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="lesson-code">Section / Page</th>
+                <th class="lesson-name">Description</th>
+                <th class="checkbox-cell">STUDING</th>
+                <th class="checkbox-cell">RE-STUDING</th>
+            </tr>
+        </thead>
+    </table>
+
+    <div class="chapter-title">Section 1 - Page 107</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 107</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p107"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p107"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 2 - Page 108</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 108</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p108"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p108"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 3 - Page 110</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 110</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p110"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p110"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 4 - Page 117</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 117</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p117"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p117"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 5 - Page 121</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 121</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p121"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p121"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 6 - Page 122</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 122</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p122"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p122"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 7 - Page 123</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 123</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p123"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p123"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 8 - Page 130</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 130</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p130"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p130"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 9 - Page 131</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 131</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p131"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p131"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 10 - Page 135</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 135</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p135"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p135"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 11 - Page 136</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 136</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p136"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p136"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 12 - Page 137</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 137</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p137"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p137"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 13 - Page 138</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 138</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p138"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p138"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 14 - Page 139</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 139</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p139"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p139"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 15 - Page 145</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 145</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p145"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p145"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 16 - Page 155</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 155</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p155"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p155"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 17 - Page 157</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 157</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p157"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p157"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 18 - Page 158</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 158</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p158"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p158"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 19 - Page 159</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 159</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p159"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p159"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 20 - Page 164</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 164</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p164"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p164"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 21 - Page 165</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 165</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p165"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p165"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 22 - Page 169</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 169</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p169"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p169"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 23 - Page 170</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 170</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p170"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p170"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 24 - Page 172</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 172</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p172"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p172"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 25 - Page 173</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 173</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p173"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p173"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 26 - Page 178</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 178</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p178"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p178"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 27 - Page 179</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 179</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p179"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p179"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 28 - Page 183</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 183</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p183"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p183"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 29 - Page 184</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 184</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p184"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p184"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 30 - Page 186</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 186</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p186"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p186"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 31 - Page 187</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 187</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p187"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p187"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chapter-title">Section 32 - Page 192</div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="lesson-code">P. 192</td>
+                <td class="lesson-name">PAGES</td>
+                <td class="checkbox-cell"><input type="checkbox" id="initial-p192"></td>
+                <td class="checkbox-cell"><input type="checkbox" id="final-p192"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script>
+    // Auto-save feature using localStorage
+    document.addEventListener('DOMContentLoaded', () => {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        
+        // Restore checked status from localStorage
+        checkboxes.forEach(checkbox => {
+            const savedState = localStorage.getItem(checkbox.id);
+            if (savedState === 'true') {
+                checkbox.checked = true;
+            }
+            
+            // Listen to checkbox status changes and update localStorage
+            checkbox.addEventListener('change', (e) => {
+                localStorage.setItem(e.target.id, e.target.checked);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
